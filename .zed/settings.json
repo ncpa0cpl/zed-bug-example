@@ -1,0 +1,104 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "ui_font_family": "Inconsolata",
+  "ui_font_size": 20,
+  "buffer_font_size": 20,
+  "git_status": true,
+  "base_keymap": "VSCode",
+  "show_signature_help_after_edits": false,
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "languages": {
+    "JavaScript": {
+      "language_servers": ["typescript-language-server", "!vtsls"],
+      "format_on_save": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      },
+      "formatter": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      }
+    },
+    "TypeScript": {
+      "language_servers": ["typescript-language-server"],
+      "format_on_save": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      },
+      "formatter": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "language_servers": ["typescript-language-server"],
+      "format_on_save": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      },
+      "formatter": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      }
+    },
+    "SCSS": {
+      "format_on_save": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      },
+      "formatter": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      }
+    },
+    "CSS": {
+      "format_on_save": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      },
+      "formatter": {
+        "external": {
+          "command": "yarn",
+          "arguments": ["--silent", "dprint", "fmt", "--stdin", "{buffer_path}"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "importModuleSpecifierPreference": "non-relative",
+          "renameMatchingJsxTags": true
+        }
+      }
+    }
+  }
+}

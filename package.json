@@ -1,0 +1,18 @@
+{
+  "name": "zed-bug-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "npm@10.8.0+sha1.f5a017649e934a59eba54af2ea908465eb830a8f",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "adapters.ts": "^2.0.5"
+  }
+}
